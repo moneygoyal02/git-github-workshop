@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git & GitHub Workshop</title>
+
+    <!-- Reveal.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css"
+      id="theme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js/styles/monokai.css"
+    />
+  </head>
+  <body>
+    <!-- Reveal.js Presentation Structure -->
+    <div class="reveal">
+      <div class="slides">
+        <!-- Title Slide -->
+        <section>
+          <h1 style="font-size: 2em; color: #f15132">Git & GitHub</h1>
+          <p
+            style="
+              font-size: 1em;
+              color: #ffffff;
+              font-style: italic;
+              margin-top: 20px;
+            "
+          >
+            /gIt/ — "Control the past, shape the future."
+          </p>
+        </section>
+
+        <!-- Section 1: -->
+        <section>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 20px;
+            "
+          >
+            <div style="margin-right: 20px">
+              <img
+                src="gitlogo.png"
+                alt="Git"
+                style="width: 50%; height: auto; padding: 10px"
+              />
+            </div>
+            <div>
+              <img
+                src="github.png"
+                alt="GitHub"
+                style="width: 50%; height: auto; padding: 10px"
+              />
+            </div>
+          </div>
+        </section>
+
+          <!-- Section 2:  git and github is different-->
+
+          <section>
+            <h2>Git and Github are different</h2>
+          </section>
+
+            <!-- Section 3: Why git and github is different-->
+
+            <section style="text-align: left;">
+              <h3>Why git and github is different</h3>
+              <p style="font-size: 0.7em; margin-top: 50px;">
+                <strong>Git:</strong> A distributed version control system for
+                tracking changes in any set of files.
+              </p>
+              <p style="font-size: 0.7em;">
+                <strong>GitHub:</strong> A cloud-based hosting service for Git
+                repositories, with features like collaboration, pull requests, and
+                issue tracking.
+              </p>
+              <p style="font-size: 0.7em;">
+                <strong>Key Difference:</strong> Git is the software, GitHub is the
+                service that uses Git for version control and collaboration.
+              </p>
+            </section>
+              
+
+        <!-- Section 4: learning Path-->
+
+        <section>
+            <h2>Learning Path</h2>
+          </section>
+
+          <!-- Section 5: learning Path content-->
+
+<section style="text-align: left;">
+    <p style="font-size: 0.7em;">We will go in this journey something like this:</p>
+    <ul style="font-size: 0.7em; list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+        <li style="margin-bottom: 10px;">
+            Get the basics
+        </li>
+        <li style="margin-bottom: 10px;">
+            Use it daily
+        </li>
+        <li style="margin-bottom: 10px;">
+            Face the problems
+        </li>
+        <li style="margin-bottom: 10px;">
+            Solve them
+        </li>
+        <li style="margin-bottom: 10px;">
+            Learn more
+        </li>
+    </ul>
+
+    <p style="margin-top: 20px; font-size: 0.5em;">
+        <strong>We will focus more on Git first. Once you understand Git, moving towards GitHub will be easy.</strong>
+    </p>
+</section>
+
+<!-- Section: Installing Git and Setting up GitHub -->
+
+<section style="text-align: left;">
+    <h3>Install Git</h3>
+    <p style="font-size: 0.7em; margin-bottom: 100px;">Download Git from the official website (<a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a>) for Windows, macOS, or Linux. You can also install it via the command line.</p>
+    
+    <h3>Account on Github</h3>
+    <p style="font-size: 0.7em;">Sign up on GitHub. </p>
+</section>
+
+ <!-- Section 5: Terminology-->
+
+ <section>
+    <h2>Terminology</h2>
+  </section>
+
+    <!-- Section 6: version check-->
+
+    <section style="text-align: left;">
+        <h3>Check your git version</h3>
+        <p style="font-size: 0.7em; color: #6D94FF; margin-bottom: 100px;">git --version</p>
+        
+       
+    </section>
+
+    <!-- Section 7: git repository-->
+
+    <section style="text-align: left;">
+        <h3>Git Repository</h3>
+        <p style="font-size: 0.7em; margin-bottom: 100px;">A repository is a collection of files and directories that are stored together. It is a way to store and manage your code. A repository is like a folder on your computer, but it is more than just a folder. It can contain other files, folders, and even other repositories. You can think of a repository as a container that holds all your code.</p>
+
+ 
+
+</section>
+
+    <!-- Section 7: git repository-->
+
+    <section style="text-align: left;">
+       
+        <p style="font-size: 0.7em; margin-bottom: 50px;">There is a difference between a software on your system vs tracking a particular folder on your system. At any point you can run the following command to see the current state of your repository:</p>
+        <p style="font-size: 0.7em; color: #6D94FF; margin-bottom: 100px;">git status</p>
+ 
+    
+
+</section>
+
+<!-- Section 8: creating a git repository-->
+
+<section style="text-align: left;">
+    <h3>Creating a repository</h3>
+    <p style="font-size: 0.7em; margin-bottom: 20px;">Creating a repository is a process of creating a new folder on your system and initializing it as a git repository. It’s just regular folder to code your project, you are just asking git to track it. To create a repository, you can use the following command:</p>
+    <p style="font-size: 0.7em; margin-bottom: 10px;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">status</span>
+    </p>
+    <p style="font-size: 0.7em;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">init</span>
+    </p>
+
+    <p style="font-size: 0.5em; margin-top: 20px;">
+        The <strong>git status</strong> command will show you the current state of your repository. The <strong>git init</strong> command will create a new folder on your system and initialize it as a git repository. This adds a hidden <strong>.git</strong> folder to your project.
+    </p>
+    
+</section>
+
+<!-- Section 9: commit-->
+
+<section style="text-align: left;">
+    <h3>Commit</h3>
+    <p style="font-size: 0.7em; margin-bottom: 20px;">commit is a way to save your changes to your repository. It is a way to record your changes and make them permanent. You can think of a commit as a snapshot of your code at a particular point in time. When you commit your changes, you are telling git to save them in a permanent way. This way, you can always go back to that point in time and see what you changed.</p>
+
+
+</section>
+
+<!-- Section 10: user flow-->
+
+<section style="text-align: left;">
+    <h6>Usual flow looks like this:</h6>
+    <img
+    src="user-flow.png"
+    alt="user_flow"
+    style="width: 70%; height: auto; "
+  />
+   
+
+</section>
+
+<!-- Section 11: Full Flow -->
+<section style="text-align: left;">
+    <h6>Complete git flow</h6>
+    <p style="font-size: 0.5em;">A complete git flow, along with pushing the code to github looks like this:</p>
+    <img
+    src="Full Flow.png"
+    alt="full_flow"
+    style="width: 70%; height: auto; "
+  />
+   
+
+</section>
+
+<!-- Section 12: Stage -->
+
+<section style="text-align: left;">
+    <h3>Stage</h3>
+    <p style="font-size: 0.7em; margin-bottom: 20px;">Stage is a way to tell git to track a particular file or folder. You can use the following command to stage a file:</p>
+    <p style="font-size: 0.7em; margin-bottom: 10px;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">init</span>
+    </p>
+    <p style="font-size: 0.7em;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">add &lt;file1&gt; &lt;file2&gt;</span>
+    </p>
+    <p style="font-size: 0.7em; margin-bottom: 10px;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">status</span>
+    </p>
+    
+    <p style="font-size: 0.5em; margin-top: 20px;">
+        Here we are initializing the repository and adding a file to the repository. Then we can see that the file is now being tracked by git. Currently our files are in staging area, this means that we have not yet committed the changes but are ready to be committed.
+    </p>
+    
+</section>
+
+
+<!-- Section 12: commit -->
+
+<section style="text-align: left;">
+    <h3>Commit</h3>
+    
+    <p style="font-size: 0.7em; margin-bottom: 10px;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">commit</span> <span style="color: #6D94FF;">-m</span> <span style="color: #B8B88D;">&quot;commit message&quot;</span> 
+    </p>
+      <p style="font-size: 0.7em; margin-bottom: 10px;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">status</span>
+    </p>
+    
+    <p style="font-size: 0.5em; margin-top: 20px;">
+        Here we are committing the changes to the repository. We can see that the changes are now committed to the repository. The -m flag is used to add a message to the commit. This message is a short description of the changes that were made. You can use this message to remember what the changes were. Missing the -m flag will result in an action that opens your default settings editor, which is usually VIM. We will change this to vscode in the next section.
+    </p>
+    
+</section>
+
+<!-- Section 13: git log -->
+
+<section style="text-align: left;">
+    <h3>Logs</h3>
+   
+    <p style="font-size: 0.7em; margin-bottom: 10px;">
+        <span style="color: #6D94FF;">git</span> <span style="color: #B8B88D;">log</span>
+    </p>
+        <p style="font-size: 0.5em; margin-top: 20px;">
+            This command will show you the history of your repository. It will show you all the commits that were made to the repository. You can use the <strong>--oneline</strong> flag to show only the commit message. This will make the output more compact and easier to read.
+    </p>
+    
+</section>
+
+<!-- Section 14: git ignore --> 
+
+<section style="text-align: left;">
+    <h3>gitignore</h3>
+   
+   
+        <p style="font-size: 0.5em; margin-top: 20px;">
+            Gitignore is a file that tells git which files and folders to ignore. It is a way to prevent git from tracking certain files or folders.  
+    </p>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    <!-- Reveal.js Core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+    <!-- Highlight.js Plugin for Code Syntax Highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+
+    <!-- Initialize Reveal.js -->
+    <script>
+      Reveal.initialize({
+        plugins: [RevealHighlight],
+        transition: "slide", // Animation effect for slide transitions
+        transitionSpeed: "fast", // Set transition speed
+        controls: true, // Show controls to navigate slides
+        slideNumber: true, // Display slide numbers
+      });
+    </script>
+  </body>
+</html>
